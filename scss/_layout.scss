@@ -1,0 +1,22 @@
+.content {
+  margin: 0;
+  .page-banner {
+    height: $page-banner-height;
+    width: $page-banner-width;
+    margin-top: 50px;
+    margin-bottom: 250px;
+    img {
+      height: $page-banner-height-img;
+      width: $page-banner-width-img;
+      position: relative;
+      bottom: 140px;
+    }
+    @media(max-width: 768px) {
+      height: $page-banner-mobile-height;
+      width: $page-banner-mobile-width;
+    }
+  }
+  .divider {
+    margin:80px 0;
+  }
+}

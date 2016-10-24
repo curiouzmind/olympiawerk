@@ -1,0 +1,43 @@
+
+.navbar {
+  box-shadow: none;
+  .navbar-nav {
+  float: none;
+  position: relative;
+    .active {
+      a, a:hover, a:focus {
+        background-color: $navbar-bg;
+        color: $light-orange;
+      }
+    }
+    .logo-space {
+      width: 225px;
+    }
+  	li {
+      float: none;
+      display: inline-block;
+      a {
+        font-size: 25px;
+        padding: 70px 30px;
+      }
+      a:hover, a:focus {
+        background-color: $navbar-bg;
+        color: $light-orange;
+      }
+  	}
+  }
+  img {
+    width: 30%;
+    margin: 0 auto;
+    bottom: 175px;
+    position: relative;
+    @media(max-width: 768px) {
+      width: 100%;
+      margin: 0;
+      position: static;
+      bottom: 0;
+      float: left;
+      height: 64px;
+    }
+  }
+}
