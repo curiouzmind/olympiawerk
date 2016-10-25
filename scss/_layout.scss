@@ -5,15 +5,27 @@
     width: $page-banner-width;
     margin-top: $divider+(-10px);
     margin-bottom: $divider*4;
-    img {
+    img,.sliders-bg {
       height: $page-banner-height-img;
       width: $page-banner-width-img;
       position: relative;
-      bottom: 140px;
+      bottom: 100px;
     }
     @media(max-width: 768px) {
       height: $page-banner-mobile-height;
       width: $page-banner-mobile-width;
     }
+  }
+  .treffer-img {
+    width: 100%;
+    height: 200px;
+    margin: 0 auto;
+    img {
+      width: auto;
+      height: 100%;
+    }
+  }
+  .spacer {
+    height: 400px;
   }
 }

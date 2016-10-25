@@ -4,7 +4,7 @@
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>Olympiawerk</title>
+    <title>ÜBER UNS | OLYMPIAWERK</title>
 
     <!-- sitewide styles -->
     <link href="css/olympiawerk.min.css" rel="stylesheet">
@@ -17,6 +17,7 @@
     <![endif]-->
   </head>
   <body>
+    <!-- header -->
     <header class="header container">
       <nav class="navbar navbar-default">
         <div class="container-fluid">
@@ -31,10 +32,10 @@
           </div>
           <div class="collapse navbar-collapse text-center" id="bs-example-navbar-collapse-1">
             <ul class="nav navbar-nav text-uppercase pull-none">
-              <li><a href="about.html">über uns</a></li>
-              <li><a href="#">Leistungen</a></li>
+              <li class="active"><a href="about.html">über uns<span class="sr-only">(current)</span></a></li>
+              <li><a href="services.html">Leistungen</a></li>
               <li class="logo-space"></li>
-              <li class="active"><a href="#">schreinerei<span class="sr-only">(current)</span></a></li>
+              <li><a href="woodwork.html">schreinerei</a></li>
               <li><a href="contact.html">kontakt</a></li>
             </ul>
             <!-- logo -->
@@ -43,10 +44,30 @@
           </div>
         </div>
       </nav>
-    </header><!-- /header -->
-    <main>
+    </header>
+    <!-- /header -->
+    <main class="content">
+      <div class="main-content">
+        <!--  page banner-->
+        <div class="page-banner well">
+          <div class="container">
+            <img class="img-responsive" src="images\woodwork-banner.jpg" alt="Founders Image" />
+          </div>
+        </div>
+        <div class="row">
+          <div class="col-md-12 treffer-img">
+            <img class="img-responsive center-block" src="images/treffer_logotype.jpg" alt="" />
+          </div>
+        </div>
+        <!--  articles-->
+        <div class="row card">
+          <div class="container">
 
+          </div>
+        </div>
+      </div>
     </main>
+    <!-- footer -->
     <footer class="footer">
       <div class="container">
         <div class="row">
@@ -57,12 +78,13 @@
         </div>
       </div>
     </footer>
-    </div>
+    <!-- /footer -->
     <!--  SCRIPTS-->
     <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
     <script src="node_modules/jquery/dist/jquery.min.js"></script>
     <!-- Include all compiled plugins (below), or include individual files as needed -->
     <script src="node_modules/bootstrap-sass/assets/javascripts/bootstrap.min.js"></script>
     <script src="scripts/olympiawerk.js"></script>
+    <!-- /scripts -->
   </body>
-  </html>
+</html>
