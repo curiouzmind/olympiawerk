@@ -3,8 +3,8 @@
   .page-banner {
     height: $page-banner-height;
     width: $page-banner-width;
-    margin-top: 50px;
-    margin-bottom: 250px;
+    margin-top: $divider+(-10px);
+    margin-bottom: $divider*4;
     img {
       height: $page-banner-height-img;
       width: $page-banner-width-img;
@@ -15,8 +15,5 @@
       height: $page-banner-mobile-height;
       width: $page-banner-mobile-width;
     }
-  }
-  .divider {
-    margin:80px 0;
   }
 }

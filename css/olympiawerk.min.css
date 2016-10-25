@@ -19,7 +19,7 @@ body .wrapper {
   height: 600px;
   width: 100%;
   margin-top: 50px;
-  margin-bottom: 250px;
+  margin-bottom: 240px;
 }
 
 .content .page-banner img {
@@ -34,10 +34,6 @@ body .wrapper {
     height: auto;
     width: 100%;
   }
-}
-
-.content .divider {
-  margin: 80px 0;
 }
 
 .navbar {
@@ -122,6 +118,10 @@ body .wrapper {
   margin-bottom: 5px;
 }
 
+.card .card-text .card-text-2, .card-bg-img-left .card-text .card-text-2, .card-bg-img-right .card-text .card-text-2 {
+  margin-bottom: 0;
+}
+
 @media (max-width: 768px) {
   .card .card-text, .card-bg-img-left .card-text, .card-bg-img-right .card-text {
     text-align: left;
@@ -133,7 +133,7 @@ body .wrapper {
   min-height: 470px;
   background-clip: border-box;
   background-size: auto 470px;
-  margin-bottom: 80px;
+  margin-bottom: 50px;
 }
 
 @media (max-width: 768px) {
@@ -143,10 +143,11 @@ body .wrapper {
 }
 
 .card-bg-img-right {
-  background: url(../images/card-img-right.jpg) no-repeat 100% #fff;
+  background: url(../images/card-img-right-web.jpg) no-repeat 100% #fff;
   min-height: 470px;
   background-clip: border-box;
   background-size: auto 470px;
+  margin-bottom: 60px;
 }
 
 @media (max-width: 768px) {
