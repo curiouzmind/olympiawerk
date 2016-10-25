@@ -28,4 +28,10 @@
   .spacer {
     height: 400px;
   }
+  .woodwork-space {
+    margin-bottom: $divider+40px;
+  }
+  .woodwork-space2 {
+    margin-bottom: $divider+(-40px);
+  }
 }

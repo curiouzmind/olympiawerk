@@ -52,6 +52,14 @@ body .wrapper {
   height: 400px;
 }
 
+.content .woodwork-space {
+  margin-bottom: 100px;
+}
+
+.content .woodwork-space2 {
+  margin-bottom: 20px;
+}
+
 .navbar {
   box-shadow: none;
 }
@@ -247,6 +255,46 @@ body .wrapper {
   .card-bg-img-right {
     background: #fff;
   }
+}
+
+.card-overlay .card-overlay-bg, .card-overlay .card-overlay-bg1, .card-overlay .card-overlay-bg2, .card-overlay .card-overlay-bg3 {
+  min-height: 276px;
+  margin: 0 auto;
+  background-clip: border-box;
+  background-size: auto 276px;
+  text-align: center;
+  padding: 111px 0;
+}
+
+.card-overlay .card-overlay-bg .card-overlay-text, .card-overlay .card-overlay-bg1 .card-overlay-text, .card-overlay .card-overlay-bg2 .card-overlay-text, .card-overlay .card-overlay-bg3 .card-overlay-text {
+  text-transform: uppercase;
+  text-align: center;
+  color: #fff;
+  border: solid 1px #fff;
+  padding: 5px;
+  font-size: 30px;
+  font-weight: 600;
+}
+
+.card-overlay .card-overlay-bg1 {
+  background: -webkit-linear-gradient(rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.6)), url(../images/tradition-bg.jpg) no-repeat 100% #fff;
+  background: linear-gradient(rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.6)), url(../images/tradition-bg.jpg) no-repeat 100% #fff;
+}
+
+.card-overlay .card-overlay-bg2 {
+  background: -webkit-linear-gradient(rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.6)), url(../images/innovation-bg.jpg) no-repeat 46% #fff;
+  background: linear-gradient(rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.6)), url(../images/innovation-bg.jpg) no-repeat 46% #fff;
+}
+
+.card-overlay .card-overlay-bg3 {
+  background: -webkit-linear-gradient(rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.6)), url(../images/kreativat-bg.jpg) no-repeat 40% #fff;
+  background: linear-gradient(rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.6)), url(../images/kreativat-bg.jpg) no-repeat 40% #fff;
+}
+
+.card-overlay .card-overlay-blurb {
+  text-align: justify;
+  margin-top: 10px;
+  line-height: 1.25;
 }
 
 .footer {

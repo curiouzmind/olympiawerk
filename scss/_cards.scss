@@ -57,3 +57,54 @@
     background: #fff;
   }
 }
+.card-overlay {
+  .card-overlay-bg {
+    min-height: 276px;
+    margin: 0 auto;
+    background-clip: border-box;
+    background-size: auto 276px;
+    text-align: center;
+    padding: 111px 0;
+    .card-overlay-text {
+      text-transform: uppercase;
+      text-align: center;
+      color: $lightest;
+      border: solid 1px $lightest;
+      padding: 5px;
+      font-size: 30px;
+      font-weight: 600;
+    }
+  }
+  .card-overlay-bg1 {
+    background:
+    linear-gradient(
+      rgba(0, 0, 0, 0.2),
+      rgba(0, 0, 0, 0.6)
+    ),
+    url(../images/tradition-bg.jpg) no-repeat 100% #fff;
+    @extend .card-overlay-bg;
+  }
+  .card-overlay-bg2 {
+    background:
+    linear-gradient(
+      rgba(0, 0, 0, 0.2),
+      rgba(0, 0, 0, 0.6)
+    ),
+    url(../images/innovation-bg.jpg) no-repeat 46% #fff;
+    @extend .card-overlay-bg;
+  }
+  .card-overlay-bg3 {
+    background:
+    linear-gradient(
+      rgba(0, 0, 0, 0.2),
+      rgba(0, 0, 0, 0.6)
+    ),
+    url(../images/kreativat-bg.jpg) no-repeat 40% #fff;
+    @extend .card-overlay-bg;
+  }
+  .card-overlay-blurb {
+    text-align: justify;
+    margin-top: 10px;
+    line-height: 1.25;
+  }
+}
