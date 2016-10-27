@@ -34,4 +34,38 @@
   .woodwork-space2 {
     margin-bottom: $divider+(-40px);
   }
+  .woodwork-space3 {
+    margin-bottom: $divider+(-50px);
+  }
+  .contact-map {
+    width: 100%;
+    position: relative;
+    right: 0;
+    top: 0px;
+    z-index: -1;
+  }
+  .contact-nospace {
+    height: 500px;
+    margin-bottom: 0;
+    width: 100%;
+    img {
+      height: 100%;
+      width: auto;
+      margin: 0 auto;
+      bottom: 138px;
+    }
+    .caption-left, .caption-right {
+      text-align: left;
+      width: 25%;
+      position: relative;
+      bottom: 290px;
+      left: 255px;
+      color: #fff;
+      line-height: 1.25;
+    }
+    .caption-right {
+      left: 222px;
+      bottom: 165px;
+    }
+  }
 }
