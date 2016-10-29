@@ -40,7 +40,7 @@
   min-height: 470px;
   background-clip: border-box;
   background-size: auto 470px;
-  margin-bottom: $divider+(-10px);
+  // margin-bottom: $divider+(-10px);
   // box-shadow: inset -200px 3px 141px -50px rgba(255,255,255,1);
   @media(max-width: 768px) {
     background: #fff;
@@ -52,7 +52,7 @@
   min-height: 470px;
   background-clip: border-box;
   background-size: auto 470px;
-  margin-bottom: $divider;
+  // margin-bottom: $divider;
   @media(max-width: 768px) {
     background: #fff;
   }
