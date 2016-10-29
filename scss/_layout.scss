@@ -3,13 +3,16 @@
   .page-banner {
     height: $page-banner-height;
     width: $page-banner-width;
-    margin-top: $divider+(-10px);
-    margin-bottom: $divider*4;
+    margin-top: 0;
+    margin-bottom: 0;
     img,.sliders-bg {
       height: $page-banner-height-img;
       width: $page-banner-width-img;
       position: relative;
-      bottom: 100px;
+      bottom: 200px;
+    }
+    .height-max {
+      height: 100%;
     }
     @media(max-width: 768px) {
       height: $page-banner-mobile-height;
