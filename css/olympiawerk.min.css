@@ -2,6 +2,18 @@
 @import "https://fonts.googleapis.com/css?family=Quicksand:400,700|Robot";
 @import "https://maxcdn.bootstrapcdn.com/bootswatch/3.3.7/paper/bootstrap.min.css";
 @import url(./bxslidercss/jquery.bxslider.css);
+.content-margin {
+  height: 50px;
+}
+
+.banner-fix-top {
+  height: 123px;
+}
+
+.banner-fix-bottom {
+  height: 120px;
+}
+
 body {
   font-family: 'Quicksand', 'Roboto', sans-serif;
   font-size: 20px;
@@ -19,15 +31,19 @@ body .wrapper {
 .content .page-banner {
   height: 600px;
   width: 100%;
-  margin-top: 50px;
-  margin-bottom: 240px;
+  margin-top: 0;
+  margin-bottom: 0;
 }
 
 .content .page-banner img, .content .page-banner .sliders-bg {
   height: auto;
   width: 100%;
   position: relative;
-  bottom: 100px;
+  bottom: 200px;
+}
+
+.content .page-banner .height-max {
+  height: 100%;
 }
 
 @media (max-width: 768px) {
@@ -274,7 +290,6 @@ body .wrapper {
   min-height: 470px;
   background-clip: border-box;
   background-size: auto 470px;
-  margin-bottom: 50px;
 }
 
 @media (max-width: 768px) {
@@ -288,7 +303,6 @@ body .wrapper {
   min-height: 470px;
   background-clip: border-box;
   background-size: auto 470px;
-  margin-bottom: 60px;
 }
 
 @media (max-width: 768px) {
