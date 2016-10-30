@@ -1,6 +1,13 @@
-
+.header {
+  padding: 0;
+}
 .navbar {
   box-shadow: none;
+  .navbar-brand {
+    margin: 0;
+    padding: 0;
+    height: 0;
+  }
   .navbar-nav {
   float: none;
   position: relative;
@@ -17,8 +24,8 @@
       float: none;
       display: inline-block;
       a {
-        font-size: 25px;
-        padding: 70px 30px;
+        font-size: 18px;
+        padding: 55px 39px;
       }
       a:hover, a:focus {
         background-color: $navbar-bg;
@@ -29,7 +36,7 @@
   img {
     width: 30%;
     margin: 0 auto;
-    bottom: 175px;
+    bottom: 135px;
     position: relative;
     @media(max-width: 768px) {
       width: 100%;

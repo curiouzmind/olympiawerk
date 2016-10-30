@@ -14,9 +14,17 @@
   height: 120px;
 }
 
+.content-margin-30 {
+  height: 30px;
+}
+
+.content-margin-5 {
+  height: 5px;
+}
+
 body {
   font-family: 'Quicksand', 'Roboto', sans-serif;
-  font-size: 20px;
+  font-size: 17px;
   background: #fff;
 }
 
@@ -29,21 +37,31 @@ body .wrapper {
 }
 
 .content .page-banner {
-  height: 600px;
-  width: 100%;
   margin-top: 0;
   margin-bottom: 0;
 }
 
-.content .page-banner img, .content .page-banner .sliders-bg {
-  height: auto;
-  width: 100%;
+.content .page-banner .page-banner-img img, .content .page-banner .page-banner-img .sliders-bg {
+  height: 769px;
+  width: 1020px;
   position: relative;
-  bottom: 200px;
+  bottom: 124px;
 }
 
 .content .page-banner .height-max {
   height: 100%;
+}
+
+.content .page-banner .page-banner-well {
+  height: 526px;
+  width: 100%;
+  margin: 0;
+  padding: 0;
+}
+
+.content .page-banner .page-banner-img {
+  height: 100%;
+  width: 100%;
 }
 
 @media (max-width: 768px) {
@@ -116,8 +134,47 @@ body .wrapper {
   bottom: 165px;
 }
 
+.container {
+  margin-right: auto;
+  margin-left: auto;
+  padding-left: 15px;
+  padding-right: 15px;
+}
+
+@media (min-width: 1200px) {
+  .container {
+    width: 1200px;
+  }
+}
+
+@media (min-width: 992px) {
+  .container {
+    width: 1170px;
+  }
+}
+
+@media (min-width: 768px) {
+  .container {
+    width: 1020px;
+  }
+}
+
+.contact-page img {
+  height: auto !important;
+}
+
+.header {
+  padding: 0;
+}
+
 .navbar {
   box-shadow: none;
+}
+
+.navbar .navbar-brand {
+  margin: 0;
+  padding: 0;
+  height: 0;
 }
 
 .navbar .navbar-nav {
@@ -140,8 +197,8 @@ body .wrapper {
 }
 
 .navbar .navbar-nav li a {
-  font-size: 25px;
-  padding: 70px 30px;
+  font-size: 18px;
+  padding: 55px 39px;
 }
 
 .navbar .navbar-nav li a:hover, .navbar .navbar-nav li a:focus {
@@ -152,7 +209,7 @@ body .wrapper {
 .navbar img {
   width: 30%;
   margin: 0 auto;
-  bottom: 175px;
+  bottom: 135px;
   position: relative;
 }
 
@@ -287,9 +344,9 @@ body .wrapper {
 
 .card-bg-img-left {
   background: url(../images/card-img-left-web.jpg) no-repeat #fff;
-  min-height: 470px;
+  min-height: 395px;
   background-clip: border-box;
-  background-size: auto 470px;
+  background-size: auto 395px;
 }
 
 @media (max-width: 768px) {
@@ -300,9 +357,9 @@ body .wrapper {
 
 .card-bg-img-right {
   background: url(../images/card-img-right-web.jpg) no-repeat 100% #fff;
-  min-height: 470px;
+  min-height: 395px;
   background-clip: border-box;
-  background-size: auto 470px;
+  background-size: auto 395px;
 }
 
 @media (max-width: 768px) {
@@ -324,7 +381,7 @@ body .wrapper {
   text-transform: uppercase;
   text-align: center;
   color: #fff;
-  border: solid 1px #fff;
+  border: solid 2px #fff;
   padding: 5px;
   font-size: 30px;
   font-weight: 600;

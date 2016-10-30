@@ -37,9 +37,9 @@
 .card-bg-img-left {
   @extend .card;
   background: url(../images/card-img-left-web.jpg) no-repeat #fff;
-  min-height: 470px;
+  min-height: 395px;
   background-clip: border-box;
-  background-size: auto 470px;
+  background-size: auto 395px;
   // margin-bottom: $divider+(-10px);
   // box-shadow: inset -200px 3px 141px -50px rgba(255,255,255,1);
   @media(max-width: 768px) {
@@ -49,9 +49,9 @@
 .card-bg-img-right {
   @extend .card;
   background: url(../images/card-img-right-web.jpg) no-repeat 100% #fff;
-  min-height: 470px;
+  min-height: 395px;
   background-clip: border-box;
-  background-size: auto 470px;
+  background-size: auto 395px;
   // margin-bottom: $divider;
   @media(max-width: 768px) {
     background: #fff;
@@ -69,7 +69,7 @@
       text-transform: uppercase;
       text-align: center;
       color: $lightest;
-      border: solid 1px $lightest;
+      border: solid 2px $lightest;
       padding: 5px;
       font-size: 30px;
       font-weight: 600;

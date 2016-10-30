@@ -2,8 +2,14 @@
   height: 50px;
 }
 .banner-fix-top {
-  height: 123px;
+  height: $banner-fix-top;
 }
 .banner-fix-bottom {
-  height: 120px;
+  height: $banner-fix-bottom;
+}
+.content-margin-30 {
+  height: 30px;
+}
+.content-margin-5 {
+  height: 5px;
 }
