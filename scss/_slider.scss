@@ -9,6 +9,26 @@
       bottom: 25px;
     }
   }
+  .carousel-caption {
+    bottom: 47%;
+    span {
+      background-color: $darkest;
+      color: $lightest;
+      border: solid 1px $lightest;
+      font-weight: bold;
+      padding: 5px 10px;
+      display: inline-block;
+      text-transform: uppercase;
+      float: right;
+      letter-spacing: 1.1px;
+      margin: 5px;
+    }
+    @media screen and (min-width: 768px) {
+      left: 40%;
+      right: 15%;
+      padding-bottom: 30px;
+    }
+  }
 }
 
 .Vektor_Smartobjekt {
@@ -20,52 +40,4 @@
   width: 0.917cm;
   height: 0.776cm;
   z-index: 174;
-}
-.Vektor_Smartobjekt {
-  background-image: url("images/Vektor-Smartobjekt.png");
-  opacity: 0.2;
-  position: absolute;
-  left: 46.778cm;
-  top: 49.671cm;
-  width: 0.917cm;
-  height: 0.776cm;
-  z-index: 173;
-}
-.Vektor_Smartobjekt {
-  background-image: url("images/Vektor-Smartobjekt.png");
-  opacity: 0.2;
-  position: absolute;
-  left: 43.603cm;
-  top: 49.671cm;
-  width: 0.917cm;
-  height: 0.776cm;
-  z-index: 172;
-}
-.Vektor_Smartobjekt {
-  background-image: url("images/Vektor-Smartobjekt.png");
-  opacity: 0.2;
-  position: absolute;
-  left: 40.464cm;
-  top: 49.671cm;
-  width: 0.917cm;
-  height: 0.776cm;
-  z-index: 171;
-}
-.Vektor_Smartobjekt {
-  background-image: url("images/Vektor-Smartobjekt.png");
-  position: absolute;
-  left: 37.289cm;
-  top: 49.671cm;
-  width: 0.917cm;
-  height: 0.776cm;
-  z-index: 170;
-}
-.Vektor_Smartobjekt {
-  background-image: url("images/Vektor-Smartobjekt.png");
-  position: absolute;
-  left: 37.289cm;
-  top: 49.671cm;
-  width: 0.917cm;
-  height: 0.776cm;
-  z-index: 170;
 }

@@ -101,8 +101,13 @@
   // width: 100% !important;
   height: auto !important;
 }
+.sliders img {
+  bottom: 0 !important;
+}
+.sliders .sliders-bg {
+  bottom: 100px !important;
+}
 .sliders img, .sliders .sliders-bg {
   // width: 100% !important;
   height: auto !important;
-  bottom: 100px !important;
 }
