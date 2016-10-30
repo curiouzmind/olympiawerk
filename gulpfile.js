@@ -61,7 +61,7 @@ gulp.task('browser-sync', function() {
 	// css copy
 	gulp.task('copyCss', function() {
 		return gulp
-			.src('/css/**/*.css')
+			.src('css/**/*.css')
 			.pipe(gulp.dest('dist/css/'))
 			.pipe(browserSync.reload({stream:true}));
 	});
@@ -99,4 +99,3 @@ gulp.task('browser-sync', function() {
 	//default
 	gulp.task('default', ['watch']);
 //prod
-

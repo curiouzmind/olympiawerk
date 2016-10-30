@@ -1,7 +1,7 @@
 @charset "UTF-8";
-footer p {
-  background-color: #ff8c00;
-  font-size: 50px;
+@import "https://fonts.googleapis.com/css?family=Lato|Quicksand|Roboto";
+main {
+  min-height: 600px;
 }
 
 /*!
