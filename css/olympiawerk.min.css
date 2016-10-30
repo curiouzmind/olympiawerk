@@ -14,6 +14,10 @@
   height: 120px;
 }
 
+.sliders-fix-bottom {
+  height: 520px;
+}
+
 .content-margin-30 {
   height: 30px;
 }
@@ -161,6 +165,11 @@ body .wrapper {
 
 .contact-page img {
   height: auto !important;
+}
+
+.sliders img, .sliders .sliders-bg {
+  height: auto !important;
+  bottom: 100px !important;
 }
 
 .header {
