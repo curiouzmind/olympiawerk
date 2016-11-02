@@ -105,47 +105,54 @@
     background-clip: border-box;
     background-size: auto 276px;
     text-align: center;
-    padding: 111px 0;
-    .card-overlay-text {
-      text-transform: uppercase;
-      text-align: center;
-      color: $lightest;
-      border: solid 2px $lightest;
-      padding: 5px;
-      font-size: 30px;
-      font-weight: 600;
-    }
+    // padding: 111px 0;
   }
+  .card-overlay-text {
+    color: transparent;
+    border: solid 2px transparent;
+    text-transform: uppercase;
+    text-align: center;
+    padding: 5px;
+    font-size: 30px;
+    font-weight: 600;
+  }
+  .card-overlay-blurb {
+    color: transparent;
+    text-align: justify;
+    letter-spacing: -0.5px;
+    margin-top: 10px;
+    line-height: 1.25;
+  }
+  //bg 1,2,3
   .card-overlay-bg1 {
-    background:
-    linear-gradient(
-      rgba(0, 0, 0, 0.2),
-      rgba(0, 0, 0, 0.6)
-    ),
-    url(../images/tradition-bg.jpg) no-repeat 100% #fff;
+    background: url(../images/tradition-bg.jpg) no-repeat 100% #fff;
     @extend .card-overlay-bg;
   }
   .card-overlay-bg2 {
     background:
-    linear-gradient(
-      rgba(0, 0, 0, 0.2),
-      rgba(0, 0, 0, 0.6)
-    ),
     url(../images/innovation-bg.jpg) no-repeat 46% #fff;
     @extend .card-overlay-bg;
   }
   .card-overlay-bg3 {
     background:
-    linear-gradient(
-      rgba(0, 0, 0, 0.2),
-      rgba(0, 0, 0, 0.6)
-    ),
     url(../images/kreativat-bg.jpg) no-repeat 40% #fff;
     @extend .card-overlay-bg;
   }
+}
+.card-overlay:hover {
+  .card-overlay-text {
+    color: $lightest;
+    border: solid 2px $lightest;
+  }
   .card-overlay-blurb {
-    text-align: justify;
-    margin-top: 10px;
-    line-height: 1.25;
+    color: $darkest;
+    border: solid 2px $lightest;
+  }
+  .dark-overlay {
+    transition: all 0.5s ease;
+    background: #000;
+    opacity: 0.55;
+    height: 100%;
+    padding: 111px 0;
   }
 }

@@ -3,12 +3,34 @@
   .page-banner {
     margin-top: 0;
     margin-bottom: 0;
+    padding: 0;
+    width: 320px;
+    @media (min-width: 768px) {
+      height: auto;
+      width: 100%;
+      margin: 0 auto;
+    }
+    .woodwork-border {
+      border-right: solid 20px $lightest;
+      border-left: solid 20px $lightest;
+    }
     .page-banner-img {
+      height: $page-banner-height-img;
+      width: $page-banner-width-img;
+      position: relative;
+      bottom: 124px;
+      margin: 0 auto;
+      padding: 0;
+      overflow: hidden;
+      @media (min-width: 768px) {
+        height: $page-banner-height-img-md;
+        width: $page-banner-width-img-md;
+        margin: 0 auto;
+        padding: 0;
+      }
       img,.sliders-bg {
-        height: $page-banner-height-img;
-        width: $page-banner-width-img;
-        position: relative;
-        bottom: 124px;
+        height: $page-banner-img-height;
+        width: $page-banner-img-width;
       }
     }
     .height-max {
@@ -19,14 +41,6 @@
       width: $page-banner-well-width;
       margin: 0;
       padding: 0;
-    }
-    .page-banner-img {
-      height: 100%;
-      width: $page-banner-img-width;
-    }
-    @media(max-width: 768px) {
-      height: $page-banner-mobile-height;
-      width: $page-banner-mobile-width;
     }
   }
   .treffer-img {
@@ -53,6 +67,9 @@
     right: 0;
     top: 0px;
     z-index: -1;
+  }
+  .contact-page {
+    overflow: visible !important;
   }
   .contact-nospace {
     height: 500px;
@@ -93,10 +110,6 @@
     @media (min-width: 768px) {
         width: 1020px;
     }
-}
-.contact-page img {
-  // width: 100% !important;
-  height: auto !important;
 }
 .sliders img {
   bottom: 0 !important;
