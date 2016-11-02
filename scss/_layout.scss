@@ -38,9 +38,6 @@
       height: 100%;
     }
   }
-  .spacer {
-    height: 400px;
-  }
   .woodwork-space {
     margin-bottom: $divider+40px;
   }
@@ -110,4 +107,8 @@
 .sliders img, .sliders .sliders-bg {
   // width: 100% !important;
   height: auto !important;
+}
+//FOOTER STYLES
+.footer {
+  margin-top: 110px;
 }

@@ -1,7 +1,7 @@
 .card {
   .card-border {
     margin: 0;
-    width: 41.5%;
+    width: 35%;
     border: solid 2px $light-orange;
     @media(max-width: 768px) {
       float: none !important;
@@ -12,7 +12,7 @@
     color: #ff9933;
     font-weight: bolder;
     line-height: 1;
-    margin: 20px 0;
+    margin: 50px 0;
     .card-header-1 {
     }
     .card-header-2 {
@@ -22,7 +22,10 @@
     margin: 0;
     padding: 0;
     text-align: justify;
+    text-justify: inter-word;
     line-height: 1.25;
+    font-size: 13px;
+    color: $darkest;
     .card-text-1 {
       margin-bottom: 5px;
     }
@@ -36,25 +39,63 @@
 }
 .card-bg-img-left {
   @extend .card;
-  background: url(../images/card-img-left-web.jpg) no-repeat #fff;
-  min-height: 395px;
+  background: url(../images/card-img-left.jpg) no-repeat #fff;
+  min-height: 380px;
   background-clip: border-box;
-  background-size: auto 395px;
-  // margin-bottom: $divider+(-10px);
-  // box-shadow: inset -200px 3px 141px -50px rgba(255,255,255,1);
+  background-size: auto 380px;
+  padding: 0;
   @media(max-width: 768px) {
     background: #fff;
+  }
+  .col-md-offset-4 {
+    @media (min-width: 992px) {
+        margin-left: 40.333333%;
+    }
+  }
+  .col-md-offset-5 {
+    @media (min-width: 992px) {
+        margin-left: 52.666667%;
+    }
+  }
+  .col-md-offset-8 {
+    @media (min-width: 992px) {
+      margin-left: 64.666667%;
+    }
+  }
+  .col-md-4 {
+    @media (min-width: 992px) {
+      width: 35.333333%;
+    }
   }
 }
 .card-bg-img-right {
   @extend .card;
-  background: url(../images/card-img-right-web.jpg) no-repeat 100% #fff;
-  min-height: 395px;
+  background: url(../images/card-img-right.jpg) 100% no-repeat #fff;
+  min-height: 321px;
   background-clip: border-box;
-  background-size: auto 395px;
-  // margin-bottom: $divider;
+  background-size: auto 321px;
   @media(max-width: 768px) {
     background: #fff;
+  }
+  .col-md-offset-1 {
+    @media (min-width: 992px) {
+        margin-left:7.93%;
+    }
+  }
+  .col-md-offset-11 {
+    @media (min-width: 992px) {
+        margin-left: 92.1%;
+    }
+  }
+  .col-md-offset-3 {
+    @media (min-width: 992px) {
+      margin-left: 24%;
+    }
+  }
+  .col-md-9 {
+    @media (min-width: 992px) {
+      width: 76%;
+    }
   }
 }
 .card-overlay {
