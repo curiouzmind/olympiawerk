@@ -48,8 +48,11 @@
         width: 40%;
       }
       .text2 {
-        left: 506px;
+        left: 516px;
         width: 50%;
+        a {
+          color: inherit;
+        }
       }
     }
     .height-max {
@@ -114,21 +117,6 @@
     }
   }
 }
-// .container {
-//     margin-right: auto;
-//     margin-left: auto;
-//     padding-left: 15px;
-//     padding-right: 15px;
-//     @media (min-width: 1200px) {
-//         width: 1200px;
-//     }
-//     @media (min-width: 992px) {
-//         width: 1170px;
-//     }
-//     @media (min-width: 768px) {
-//         width: 1020px;
-//     }
-// }
 .sliders img {
   bottom: 0 !important;
 }
@@ -145,7 +133,6 @@
     position: fixed;
     z-index: 999;
     background: $light-orange;
-    // opacity: 0.75;
     text-decoration: none;
     color: $lightest;
     bottom: 89px;

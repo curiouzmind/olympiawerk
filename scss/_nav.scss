@@ -18,7 +18,11 @@
       }
     }
     .logo-space {
-      width: 225px;
+      width: 140px;
+    }
+    ul {
+      position: relative;
+      z-index: 1;
     }
   	li {
       float: none;
@@ -37,15 +41,9 @@
   img {
     width: 30%;
     margin: 0 auto;
-    bottom: 0;
+    bottom: -5px;
     position: relative;
-    // @media(max-width: 768px) {
-    //   width: 100%;
-    //   margin: 0;
-    //   position: static;
-    //   bottom: 0;
-    //   float: left;
-    //   height: 64px;
-    // }
+    z-index: 3;
+    left: -5px;
   }
 }

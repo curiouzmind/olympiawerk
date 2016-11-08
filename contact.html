@@ -71,7 +71,7 @@
                 MAIL info@olympiawerk.de | WEB www.olympiawerk.de <br>
               </p>
               <p class="text2">
-                KONZEPTION &amps; DESIGN Britta Maile | FILM & FOTOGRAFIE www.jakuzee.de
+                KONZEPTION &amp; DESIGN Britta Maile | FILM &amp; FOTOGRAFIE <a href="www.jakuzee.de">www.jakuzee.de</a>
               </p>
             </div>
           </div>
@@ -127,19 +127,19 @@
           $(".contact-map").toggleClass("contact-map-state1").fadeIn('slow');
         });
 
-        // var amountScrolled = 500;
-        //
-        // $(window).scroll(function() {
-        //   if ( $(window).scrollTop() > amountScrolled ) {
-        //   	$('a.btn-floating').fadeIn('fast');
-        //   } else {
-        //   	$('a.btn-floating').fadeOut('fast');
-        //   }
-        // });
-        // $('html, body').animate({
-        //   scrollTop: 0
-        // }, 900);
-        // return false;
+        var amountScrolled = 500;
+
+        $(window).scroll(function() {
+          if ( $(window).scrollTop() > amountScrolled ) {
+          	$('a.btn-floating').fadeIn('fast');
+          } else {
+          	$('a.btn-floating').fadeOut('fast');
+          }
+        });
+        $('html, body').animate({
+          scrollTop: 0
+        }, 900);
+        return false;
       });
     </script>
   </body>
