@@ -147,6 +147,8 @@
   .card-overlay-blurb {
     color: $darkest;
     border: solid 2px $lightest;
+    word-break: break-all;
+    font-size: 16px;
   }
   .dark-overlay {
     transition: all 0.5s ease;
