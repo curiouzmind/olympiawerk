@@ -15,6 +15,7 @@ var browserify = require('gulp-browserify');
 //others
 var browserSync = require('browser-sync').create();
 var imagemin = require('gulp-imagemin');
+var _ = require('lodash');
 
 
 //variables
@@ -53,7 +54,7 @@ gulp.task('browser-sync', function() {
 	    .pipe(sass(sassOptions).on('error', sass.logError))
 	    .pipe(autoprefixer(autoprefixerOptions))
 	    .pipe(concat("olympiawerk.min.css"))
-	    // .pipe(cssminify())
+	    .pipe(cssminify())
 	    .pipe(sourcemaps.write("maps"))
 	    .pipe(gulp.dest(cssoutput))
 	    .pipe(browserSync.reload({stream: true}));
@@ -61,7 +62,7 @@ gulp.task('browser-sync', function() {
 	// css copy
 	gulp.task('copyCss', function() {
 		return gulp
-			.src('/css/**/*.css')
+			.src('css/**/*.css')
 			.pipe(gulp.dest('dist/css/'))
 			.pipe(browserSync.reload({stream:true}));
 	});
@@ -87,7 +88,18 @@ gulp.task('browser-sync', function() {
 			.src(htmlinput)
 			.pipe(gulp.dest(htmloutput));
 	});
-
+  //copy node_modules assets
+  gulp.task('copy-assets', function() {
+    var assets = {
+        scripts: [
+            './node_modules/jquery/dist/jquery.min.js',
+            './node_modules/bootstrap-sass/assets/javascripts/bootstrap.min.js'
+        ]
+    };
+    _(assets).forEach(function (assets, type) {
+       gulp.src(assets).pipe(gulp.dest('./'+type));
+    });
+});
 
 	//watch
 	gulp.task('watch', ['sass','copyCss','js','copyHtml','browser-sync'], function() {
@@ -99,4 +111,3 @@ gulp.task('browser-sync', function() {
 	//default
 	gulp.task('default', ['watch']);
 //prod
-

@@ -12,10 +12,20 @@ $darkest: #000;
 $navbar-default-color: $light-orange;
 
 // layout
-$page-banner-height: 600px;
-$page-banner-width: 100%;
+$page-banner-img-height: auto;
+$page-banner-img-width: 100%;
 $page-banner-mobile-height: auto;
 $page-banner-mobile-width: 100%;
-$page-banner-height-img: auto;
-$page-banner-width-img: 100%;
+//
+$page-banner-height-img: 365px;
+$page-banner-width-img: 320px;
+$page-banner-height-img-md: 790px;
+$page-banner-width-img-md: 1020px;
+//
+$banner-fix-top: 123px;
+$banner-fix-bottom: 120px;
+$page-banner-well-height: $page-banner-height-img-md - ($banner-fix-top + $banner-fix-bottom);
+$page-banner-well-width: 100%;
 $divider: 60px;
+//page banner
+$page-banner-height:auto;

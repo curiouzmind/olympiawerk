@@ -1,35 +1,78 @@
 .content {
   margin: 0;
   .page-banner {
-    height: $page-banner-height;
-    width: $page-banner-width;
     margin-top: 0;
     margin-bottom: 0;
-    img,.sliders-bg {
+    padding: 0;
+    width: 320px;
+    @media (min-width: 768px) {
+      height: auto;
+      width: 100%;
+      margin: 0 auto;
+    }
+    .video-pos {
+      bottom: 22px;
+    }
+    .woodwork-border {
+      border-right: solid 20px $lightest;
+      border-left: solid 20px $lightest;
+    }
+    .page-banner-img {
       height: $page-banner-height-img;
       width: $page-banner-width-img;
       position: relative;
-      bottom: 200px;
+      bottom: 124px;
+      margin: 0 auto;
+      padding: 0;
+      overflow: hidden;
+      @media (min-width: 768px) {
+        height: $page-banner-height-img-md;
+        width: $page-banner-width-img-md;
+        margin: 0 auto;
+        padding: 0;
+      }
+      img,.sliders-bg {
+        height: $page-banner-img-height;
+        width: $page-banner-img-width;
+      }
+      .text1,.text2 {
+        position: absolute;
+        z-index: 200;
+        color: #fff;
+        font-size: 13px;
+        line-height: 1.2;
+        bottom: -334px;
+      }
+      .text1 {
+        left: 14px;
+        width: 40%;
+      }
+      .text2 {
+        left: 516px;
+        width: 50%;
+        a {
+          color: inherit;
+        }
+      }
     }
     .height-max {
       height: 100%;
     }
-    @media(max-width: 768px) {
-      height: $page-banner-mobile-height;
-      width: $page-banner-mobile-width;
+    .page-banner-well {
+      height: $page-banner-well-height;
+      width: $page-banner-well-width;
+      margin: 0;
+      padding: 0;
     }
   }
   .treffer-img {
     width: 100%;
-    height: 200px;
+    height: 150px;
     margin: 0 auto;
     img {
       width: auto;
       height: 100%;
     }
-  }
-  .spacer {
-    height: 400px;
   }
   .woodwork-space {
     margin-bottom: $divider+40px;
@@ -45,7 +88,9 @@
     position: relative;
     right: 0;
     top: 0px;
-    z-index: -1;
+  }
+  .contact-page {
+    overflow: visible !important;
   }
   .contact-nospace {
     height: 500px;
@@ -70,5 +115,69 @@
       left: 222px;
       bottom: 165px;
     }
+  }
+}
+.sliders img {
+  bottom: 0 !important;
+}
+.sliders .sliders-bg {
+  bottom: 100px !important;
+}
+.sliders img, .sliders .sliders-bg {
+  // width: 100% !important;
+  height: auto !important;
+}
+.fixed-action-btn {
+  .btn-floating {
+    display: none;
+    position: fixed;
+    z-index: 999;
+    background: $light-orange;
+    text-decoration: none;
+    color: $lightest;
+    bottom: 89px;
+    right: 40px;
+    border-radius: 50%;
+    padding: 10px;
+    border: solid 1px #FF9933;
+  }
+}
+.page-banner-state1 {
+  opacity: 1;
+  overflow: visible !important;
+}
+.page-banner-state2 {
+  opacity: 0.5;
+  transition: all 0.5s ease;
+  overflow: hidden !important;
+}
+.contact-map-state1 {
+  opacity: 1;
+  position: relative;
+  z-index: -1;
+}
+.contact-map-state2 {
+  opacity: 0.25;
+  transition: all 0.5s ease;
+}
+//FOOTER STYLES
+.footer {
+  margin-top: 110px;
+  a {
+    color: $lightest;
+  }
+}
+//disabling responsiveness
+.container {
+  max-width: none !important;
+  width: 1020px;
+  @media (min-width: 1200px) {
+      width: 1020px;
+  }
+  @media (min-width: 992px) {
+      width: 1020px;
+  }
+  @media (min-width: 768px) {
+      width: 1020px;
   }
 }
