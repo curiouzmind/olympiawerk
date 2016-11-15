@@ -19,7 +19,7 @@
     }
     .page-banner-img {
       height: $page-banner-height-img;
-      width: $page-banner-width-img;
+      width: 100%;
       position: relative;
       bottom: 124px;
       margin: 0 auto;
@@ -34,6 +34,9 @@
       img,.sliders-bg {
         height: $page-banner-img-height;
         width: $page-banner-img-width;
+        @media (max-width: 768px) {
+          width: auto;
+        }
       }
       .text1,.text2 {
         position: absolute;
@@ -50,7 +53,7 @@
         width: 40%;
       }
       .text2 {
-        left: 590px;
+        left: 620px;
         width: 40%;
         a {
           color: inherit;
@@ -131,7 +134,7 @@
 }
 .fixed-action-btn {
   .btn-floating {
-    // display: none;
+    display: none;
     position: fixed;
     z-index: 999;
     background: $light-orange;
@@ -142,6 +145,7 @@
     border-radius: 50%;
     padding: 10px;
     border: solid 1px #FF9933;
+    margin: 0 15px;
   }
 }
 .page-banner-state1 {

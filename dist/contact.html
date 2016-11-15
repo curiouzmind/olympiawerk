@@ -50,7 +50,7 @@
         <div class="row mar-right0 mar-left0">
           <div class="col-md-12 col-xs-12 col-sm-12 banner-fix-top"></div>
         </div>
-        <div class="row page-banner">
+        <div class="row mar-right0 mar-left0 page-banner">
           <div class="col-md-12 col-xs-12 col-sm-12 well page-banner-well">
             <div class="container page-banner-img contact-page">
               <img class="img-responsive center-block" src="images\contact-img.jpg" alt="Founders Image" />
@@ -68,18 +68,18 @@
                 MAIL info@olympiawerk.de | WEB www.olympiawerk.de <br>
               </p>
               <p class="text2">
-                KONZEPTION &amp; DESIGN Britta Maile | FILM &amp; FOTOGRAFIE <a href="www.jakuzee.de">www.jakuzee.de</a>
+                DESIGN Britta Maile | FILM &amp; FOTOGRAFIE <a href="www.jakuzee.de">www.jakuzee.de</a>
               </p>
             </div>
           </div>
         </div>
         <!-- /page banner -->
-        <div class="row">
+        <div class="row mar-right0 mar-left0">
           <div class="col-md-12 col-xs-12 col-sm-12">
             <div class="content-margin-5"></div>
           </div>
         </div>
-        <div class="row">
+        <div class="row mar-right0 mar-left0">
           <div class="col-md-12 col-xs-12 col-sm-12">
             <div id="contact-map" class="contact-map">
               <iframe width="100%" height="1150" frameborder="0" style="border:0" src="https://www.google.com/maps/embed/v1/place?q=Helene-Mayer-Ring%2015%20%7C%20D-80809%20M%C3%BCnchen&key=AIzaSyAazedLPNfKCgHsURVlPJ-CkSaTenwsoFs" allowfullscreen></iframe>
@@ -94,15 +94,13 @@
       </div>
     </main>
     <!-- footer -->
-    <footer class="footer">
-      <div class="container">
-        <div class="row">
-          <div class="col-md-12 col-xs-12 col-sm-12 text-uppercase foot">
-            <a href="contact.html">
-              <span class="foot-left pull-left">Impressum</span>
-              <span class="foot-right pull-right">&copy; 2016 m. Treffer</span>
-            </a>
-          </div>
+    <footer class="footer contact">
+      <div class="row mar-right0 mar-left0">
+        <div class="col-md-12 col-xs-12 col-sm-12 text-uppercase foot">
+          <a href="contact.html">
+            <span class="foot-left pull-left">Impressum</span>
+            <span class="foot-right pull-right">&copy; 2016 m. Treffer</span>
+          </a>
         </div>
       </div>
     </footer>
@@ -116,27 +114,7 @@
     <!-- <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.97.8/js/materialize.min.js"></script> -->
     <script type="text/javascript">
       $(document).ready(function() {
-
-        $(".page-banner").addClass("page-banner-state1");
-        $(".contact-map").addClass("contact-map-state1");
-        $(".page-banner img").click(function() {
-          $(".page-banner").toggleClass("page-banner-state2","page-banner-state1").fadeIn('slow');
-          $(".contact-map").toggleClass("contact-map-state1").fadeIn('slow');
-        });
-
-        var amountScrolled = 500;
-
-        $(window).scroll(function() {
-          if ( $(window).scrollTop() > amountScrolled ) {
-          	$('a.btn-floating').fadeIn('fast');
-          } else {
-          	$('a.btn-floating').fadeOut('fast');
-          }
-        });
-        $('html, body').animate({
-          scrollTop: 0
-        }, 900);
-        return false;
+        contactMap();
       });
     </script>
   </body>
