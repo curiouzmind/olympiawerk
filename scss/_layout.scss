@@ -50,8 +50,8 @@
         width: 40%;
       }
       .text2 {
-        left: 516px;
-        width: 50%;
+        left: 590px;
+        width: 40%;
         a {
           color: inherit;
         }
@@ -131,7 +131,7 @@
 }
 .fixed-action-btn {
   .btn-floating {
-    display: none;
+    // display: none;
     position: fixed;
     z-index: 999;
     background: $light-orange;
@@ -153,6 +153,12 @@
   transition: all 0.5s ease;
   overflow: hidden !important;
 }
+//FOOTER STYLES
+.footer {
+  a {
+    color: $lightest;
+  }
+}
 .contact-map-state1 {
   opacity: 1;
   position: relative;
@@ -162,12 +168,8 @@
   opacity: 0.25;
   transition: all 0.5s ease;
 }
-//FOOTER STYLES
-.footer {
-  // margin-top: 110px;
-  a {
-    color: $lightest;
-  }
+.contact {
+  // margin-top: 0 !important;
 }
 //disabling responsiveness
 .container {
