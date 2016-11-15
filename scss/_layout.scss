@@ -38,10 +38,12 @@
       .text1,.text2 {
         position: absolute;
         z-index: 200;
-        color: #fff;
         font-size: 13px;
         line-height: 1.2;
         bottom: -334px;
+      }
+      .text1,.text2,a {
+        color: #fff !important;
       }
       .text1 {
         left: 14px;
