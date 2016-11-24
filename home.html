@@ -48,8 +48,8 @@
         <div class="pad-top"></div>
         <div class="well">
           <div class="banner-bg container">
-            <video class="video embed-responsiv" autoplay="true" loop="true" poster="img/about-page-banner-web.jpg">
-              <source src="dist/video/" type="video/mp4">
+            <video class="video embed-responsiv" id="video-bg-elem" autoplay="true" loop="true" poster="img/about-page-banner-web.jpg">
+              <source src="dist/video/home-vid.mp4" type="video/mp4">
               <source src="dist/video/" type="video/webm">
             </video>
           </div>
@@ -60,16 +60,25 @@
     <!-- footer -->
     <footer class="footer text-uppercase">
       <div class="container">
-            <!-- <li class="pull-right"><a href="#top">Back to top</a></li> -->
-            <span class="pull-right">© 2016 m. Treffer</span>
-            <a href="contact.html">Impressum</a>
+        <span class="pull-right">&copy; 2016 m. Treffer</span>
+        <a href="contact.html">Impressum</a>
       </div>
     </footer>
     <!-- /footer -->
-    <!--  SCRIPTS-->
+    <!-- scripts -->
     <script src="js/olympiawerk.js"></script>
     <script type="text/javascript">
-    </script>
+     $(document).ready(function() {
+       var myVideo = document.getElementById("video-bg-elem");
+       function playPause() {
+           if (myVideo.paused) {
+               myVideo.play();
+           } else {
+               myVideo.pause();
+           }
+       }
+     })
+   </script>
     <!-- /scripts -->
   </body>
 </html>
