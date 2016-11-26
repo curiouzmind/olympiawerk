@@ -12605,6 +12605,14 @@ function footerHeight() {
     - $(".footer").height())
   )
 }
+function playPause() {
+  var myVideo = document.getElementById("video-bg-elem");
+  if (myVideo.paused) {
+      myVideo.play();
+  } else {
+      myVideo.pause();
+  }
+}
 
 /*
 MAIN JS
@@ -12612,6 +12620,7 @@ MAIN JS
 
 //sticky footer
 $(document).ready(function() {
+  playPause();
   footerHeight();
 })
 

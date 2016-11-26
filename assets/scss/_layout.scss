@@ -2,35 +2,73 @@
 
 //page-banner
 .page-banner {
-  height: 252px;
-  width: auto auto;
-  padding-right: 1px;
-  padding-left: 1px;
-
-  .pad-top,.pad-bttm {
-    height: 50px;
-    margin: 0;
+  height: $page-banner-xs-height;
+  width: 100%;
+  padding-right: 0;
+  padding-left: 0;
+  position: relative;
+  @media(min-width: $screen-sm-min) {
+    height: $page-banner-sm-height;
+  }
+  @media(min-width: $screen-md-min) {
+    height: $page-banner-md-height;
+  }
+  @media(min-width: $screen-lg-min) {
+    height: $page-banner-lg-height;
+  }
+  .pad-top {
+    height: $pad-xs;
   }
   .well {
-    height: 152px;
+    height: $banner-xs-well;
+    width: 100%;
     margin: 0 auto;
-    position: relative;
+    position: absolute;
+    @media(min-width: $screen-sm-min) {
+      height: $banner-sm-well;
+    }
+    @media(min-width: $screen-md-min) {
+      height: $banner-md-well;
+    }
+    @media(min-width: $screen-lg-min) {
+      height: $banner-lg-well;
+    }
+  }
+  .pad-bttm {
+      height: $pad-xs;
   }
 }
 .banner-bg {
-  position: absolute;
-  bottom: -59px;
-  right: 9px;
-  left: 9px;
+  position: relative;;
+  bottom: 60px;
   width: 300px;
-  height: 250px;
+  height: $banner-xs-height;
   transition: all 0.5s ease;
-  @media(min-width: 450px) and (max-width: 767px) {
-    width: 400px;
-    transition: all 0.5s ease;
+  background: #f93;
+  padding-right: 10px;
+  padding-left: 10px;
+  overflow: visible;
+  @media(min-width: $screen-sm-min) {
+    width: 600px;
+    height: $banner-sm-height;
+  }
+  @media(min-width: $screen-md-min) {
+    width: 800px;
+    height: $banner-md-height;
+    padding-right: 20px;
+    padding-left: 20px;
+  }
+  @media(min-width: $screen-lg-min) {
+    width: 1020px;
+    height: $banner-lg-height;
   }
   .video {
     width: 100%;
-    height: auto;
+    height: 100%;
+    position: relative;
+    bottom: 10px;
+    @media(min-width: $screen-md-min) {
+      bottom: 14px;
+    }
   }
 }

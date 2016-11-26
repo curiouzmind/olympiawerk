@@ -1,10 +1,35 @@
 // // colors
-// $navbar-bg: transparent;
-// $light-orange: #ff9933;
-// $dark-orange: #ff9933;
-// $lightest: #fff;
-// $lighter: #ddd;
-// $light: #eee;
-// $dark: #333;
-// $darker: #a7a7a7;
-// $darkest: #000;
+$navbar-bg: transparent;
+$light-orange: #ff9933;
+$dark-orange: #ff9933;
+$lightest: #fff;
+$lighter: #ddd;
+$light: #eee;
+$dark: #333;
+$darker: #a7a7a7;
+$darkest: #000;
+
+//
+$screen-xs-max: 767px;
+$screen-sm-min: 768px;
+$screen-md-min: 992px;
+$screen-lg-min: 1200px;
+//
+$banner-xs-height: 157px;
+$banner-sm-height: 326px;
+$banner-md-height: 450px;
+$banner-lg-height: 562px;
+//
+$page-banner-xs-height: $banner-xs-height;
+$page-banner-sm-height: $banner-sm-height;
+$page-banner-md-height: $banner-md-height;
+$page-banner-lg-height: $banner-lg-height;
+//
+$pad-xs: 40px;
+$pad-sm: $pad-xs*2;
+$pad-md: $pad-xs*3;
+//
+$banner-xs-well: $page-banner-xs-height;
+$banner-sm-well: $page-banner-sm-height;
+$banner-md-well: $page-banner-md-height;
+$banner-lg-well: $page-banner-lg-height;

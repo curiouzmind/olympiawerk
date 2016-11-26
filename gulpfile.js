@@ -116,10 +116,10 @@ gulp.task('browser-sync', function() {
         .pipe(gulp.dest(imgoutput));
   });
 	//watch
-	gulp.task('watch', ['sass','js','browser-sync'], function() {
+	gulp.task('watch', ['sass','js','img','browser-sync'], function() {
 	  	gulp.watch("./assets/scss/**/*.scss", ['sass']);
       gulp.watch(jsinput, ['js']);
-	  	// gulp.watch(imginput, ['img']);
+	  	gulp.watch(imginput, ['img']);
 	    gulp.watch(htmlinput).on('change', browserSync.reload);
 	});
 	//default
