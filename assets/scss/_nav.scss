@@ -1,16 +1,29 @@
 .navbar {
   box-shadow: none;
+  margin-bottom: 0;
 }
-.navbar-nav {
+.navbar-default .navbar-nav {
   float: none !important;
   display: inline-block !important;
+  .active {
+    a, a:focus, a:hover {
+      background-color: transparent;
+      color: $light-orange;
+      font-weight: 600;
+    }
+  }
   li a {
+    font-weight: 600;
     @media(min-width: $screen-md-min) {
       font-size: 18px;
       padding-top: 40.5px;
       padding-left: 30px;
       padding-right: 30px;
     }
+  }
+  li a:hover, li a:focus {
+    background-color: transparent;
+    color: $light-orange;
   }
 }
 .navbar-brand {

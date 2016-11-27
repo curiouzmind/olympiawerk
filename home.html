@@ -32,11 +32,7 @@
             <ul class="nav navbar-nav">
               <li><a href="about.html">über uns</a><li>
               <li><a href="services.html">Leistungen</a><li>
-            <!-- </ul> -->
-            <!-- <ul class="nav navbar-nav"> -->
-              <li><a href="home.html" class="navbar-brand hidden-xs"><img class="img-responsive" src="img/olympiawerk-logo.png" alt="Olympiawerk Logo"></a></li>
-            <!-- </ul> -->
-            <!-- <ul class="nav navbar-nav navbar-right"> -->
+              <li><a href="home.html" class="navbar-brand hidden-xs"><img class="img-responsive" src="img/olympiawerk-logo.png" alt="Olympiawerk Logo"><span class="sr-only">(current)</span></a></li>
               <li><a href="woodworking.html">schreinerei</a></li>
               <li><a href="contact.html">kontakt</a></li>
             </ul>
@@ -46,15 +42,17 @@
     </header>
     <!-- /header -->
     <main class="content">
-      <div class="page-banner">
+      <div class="page-banner vid-banner">
         <div class="pad-top"></div>
         <div class="well">
           <div class="banner-bg container">
-            <video onclick="playPause()" class="video center-block" id="video-bg-elem" autoplay="true" muted loop="true" poster="img/about-page-banner-web.jpg">
-              <source src="dist/video/home-vid.mp4" type="video/mp4">
-              <source src="dist/video/" type="video/webm">
-                Your browser does not support the video tag.
-            </video>
+            <div class="vid-bg">
+              <video onclick="playPause()" class="video center-block" id="video-bg-elem" autoplay="true" muted loop="true" poster="img/about-page-banner-web.jpg">
+                <source src="dist/video/home-vid.mp4" type="video/mp4">
+                <source src="dist/video/" type="video/webm">
+                  Your browser does not support the video tag.
+              </video>
+            </div>
           </div>
         </div>
         <!-- <div class="pad-bttm"></div> -->
@@ -72,7 +70,7 @@
     <script src="js/olympiawerk.js"></script>
     <script type="text/javascript">
      $(document).ready(function() {
-
+        playPause();
      });
    </script>
     <!-- /scripts -->

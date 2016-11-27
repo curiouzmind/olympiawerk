@@ -10,26 +10,50 @@ $darker: #a7a7a7;
 $darkest: #000;
 
 //
-$screen-xs-max: 767px;
+$screen-xs-max: 320px;
 $screen-sm-min: 768px;
 $screen-md-min: 992px;
 $screen-lg-min: 1200px;
 //
-$banner-xs-height: 157px;
-$banner-sm-height: 326px;
-$banner-md-height: 450px;
-$banner-lg-height: 562px;
+$vid-banner-xs-height: 157px;
+$vid-banner-sm-height: 326px;
+$vid-banner-md-height: 450px;
+$vid-banner-lg-height: 562px;
 //
-$page-banner-xs-height: $banner-xs-height;
-$page-banner-sm-height: $banner-sm-height;
-$page-banner-md-height: $banner-md-height;
-$page-banner-lg-height: $banner-lg-height;
+$img-banner-xxs-height: 223px;
+$img-banner-xs-height: 268px;
+$img-banner-sm-height: 467px;
+$img-banner-md-height: 622px;
+$img-banner-lg-height: 793px;
+//
+$img-banner-xxs-width: 288px;
+$img-banner-xs-width: 345px;
+$img-banner-sm-width: 600px;
+$img-banner-md-width: 800px;
+$img-banner-lg-width: 1020px;
+//
+$vid-page-banner-xs-height: $vid-banner-xs-height;
+$vid-page-banner-sm-height: $vid-banner-sm-height;
+$vid-page-banner-md-height: $vid-banner-md-height;
+$vid-page-banner-lg-height: $vid-banner-lg-height;
+//
+$img-page-banner-xxs-height: $img-banner-xxs-height;
+$img-page-banner-xs-height: $img-banner-xs-height;
+$img-page-banner-sm-height: $img-banner-sm-height;
+$img-page-banner-md-height: $img-banner-md-height;
+$img-page-banner-lg-height: $img-banner-lg-height;
 //
 $pad-xs: 40px;
 $pad-sm: $pad-xs*2;
 $pad-md: $pad-xs*3;
 //
-$banner-xs-well: $page-banner-xs-height;
-$banner-sm-well: $page-banner-sm-height;
-$banner-md-well: $page-banner-md-height;
-$banner-lg-well: $page-banner-lg-height;
+$vid-banner-xs-well: $vid-page-banner-xs-height;
+$vid-banner-sm-well: $vid-page-banner-sm-height;
+$vid-banner-md-well: $vid-page-banner-md-height;
+$vid-banner-lg-well: $vid-page-banner-lg-height;
+//
+$img-banner-xxs-well: $img-page-banner-xxs-height + (-$pad-xs*2);
+$img-banner-xs-well: $img-page-banner-xs-height + (-$pad-xs*2);
+$img-banner-sm-well: $img-page-banner-sm-height + (-$pad-sm);
+$img-banner-md-well: $img-page-banner-md-height + (-$pad-md);
+$img-banner-lg-well: $img-page-banner-lg-height + (-$pad-xs*2);

@@ -1,66 +1,39 @@
-//main-content
+//header
 
-//page-banner
+//page banner
 .page-banner {
-  height: $page-banner-xs-height;
   width: 100%;
   padding-right: 0;
   padding-left: 0;
   position: relative;
-  @media(min-width: $screen-sm-min) {
-    height: $page-banner-sm-height;
-  }
-  @media(min-width: $screen-md-min) {
-    height: $page-banner-md-height;
-  }
-  @media(min-width: $screen-lg-min) {
-    height: $page-banner-lg-height;
-  }
   .pad-top {
     height: $pad-xs;
   }
   .well {
-    height: $banner-xs-well;
     width: 100%;
     margin: 0 auto;
     position: absolute;
-    @media(min-width: $screen-sm-min) {
-      height: $banner-sm-well;
-    }
-    @media(min-width: $screen-md-min) {
-      height: $banner-md-well;
-    }
-    @media(min-width: $screen-lg-min) {
-      height: $banner-lg-well;
-    }
+    padding: 19px 20px;
+    // background: #333;
   }
   .pad-bttm {
       height: $pad-xs;
   }
 }
-.banner-bg {
-  position: relative;;
-  bottom: 60px;
-  width: 300px;
-  height: $banner-xs-height;
-  transition: all 0.5s ease;
+.vid-bg {
   background: #f93;
   padding-right: 10px;
   padding-left: 10px;
-  overflow: visible;
-  @media(min-width: $screen-sm-min) {
-    width: 600px;
-    height: $banner-sm-height;
-  }
+}
+.banner-bg {
+  position: relative;;
+  bottom: 60px;
+  width: 345px;
+  height: $img-banner-xs-height;
+  transition: all 0.5s ease;
+  left: -6px;
   @media(min-width: $screen-md-min) {
-    width: 800px;
-    height: $banner-md-height;
-    padding-right: 20px;
-    padding-left: 20px;
-  }
-  @media(min-width: $screen-lg-min) {
-    width: 1020px;
-    height: $banner-lg-height;
+    left: 0;
   }
   .video {
     width: 100%;
@@ -72,3 +45,20 @@
     }
   }
 }
+//main-content
+.articles {
+    width: 345px;
+  @media(max-width: $screen-xs-max) {
+    width: 288px;
+  }
+  @media(min-width: $screen-sm-min) {
+    width: 600px;
+  }
+  @media(min-width: $screen-md-min) {
+    width: 800px;
+  }
+  @media(min-width: $screen-lg-min) {
+    width: 1020px;
+  }
+}
+//footer

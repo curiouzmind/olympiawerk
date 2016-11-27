@@ -1,0 +1,19 @@
+//video page-banner
+.vid-banner {
+  height: $vid-page-banner-xs-height;
+  .well {
+    height: $vid-banner-xs-well;
+    @media(min-width: $screen-sm-min) {
+      height: $vid-banner-sm-well;
+    }
+    @media(min-width: $screen-md-min) {
+      height: $vid-banner-md-well;
+    }
+    @media(min-width: $screen-lg-min) {
+      height: $vid-banner-lg-well;
+    }
+  }
+  .banner-bg {
+
+  }
+}
