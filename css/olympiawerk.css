@@ -11843,6 +11843,39 @@ body {
   }
 }
 
+.vid-banner .banner-bg {
+  padding-right: 0;
+  padding-left: 0;
+}
+
+@media (max-width: 320px) {
+  .vid-banner .banner-bg {
+    width: 288px;
+    height: 157px;
+  }
+}
+
+@media (min-width: 768px) {
+  .vid-banner .banner-bg {
+    width: 600px;
+    height: 467px;
+  }
+}
+
+@media (min-width: 992px) {
+  .vid-banner .banner-bg {
+    width: 800px;
+    height: 622px;
+  }
+}
+
+@media (min-width: 1200px) {
+  .vid-banner .banner-bg {
+    width: 1020px;
+    height: 793px;
+  }
+}
+
 .img-banner {
   height: 268px;
 }
@@ -11937,6 +11970,7 @@ body {
   padding-right: 0;
   padding-left: 0;
   position: relative;
+  top: 11px;
 }
 
 .page-banner .pad-top {

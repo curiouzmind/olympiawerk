@@ -14,6 +14,23 @@
     }
   }
   .banner-bg {
-
+    padding-right: 0;
+    padding-left: 0;
+    @media(max-width: 320px) {
+      width: 288px;
+      height: 157px;
+    }
+    @media(min-width: $screen-sm-min) {
+      width: 600px;
+      height: $img-banner-sm-height;
+    }
+    @media(min-width: $screen-md-min) {
+      width: 800px;
+      height: $img-banner-md-height;
+    }
+    @media(min-width: $screen-lg-min) {
+      width: 1020px;
+      height: $img-banner-lg-height;
+    }
   }
 }
