@@ -5,6 +5,7 @@
     border: solid 2px $light-orange;
     @media(max-width: 768px) {
       float: none !important;
+      margin-left: 30%;
     }
   }
   .card-header {
@@ -13,8 +14,10 @@
     font-weight: bolder;
     line-height: 1;
     margin: 20px 0;
+    text-align: center;
     @media(min-width: $screen-sm-min) {
       font-size: 30px;
+      text-align: left;
     }
     @media(min-width: $screen-md-min) {
 

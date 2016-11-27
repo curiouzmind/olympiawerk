@@ -11970,7 +11970,6 @@ body {
   padding-right: 0;
   padding-left: 0;
   position: relative;
-  top: 11px;
 }
 
 .page-banner .pad-top {
@@ -12131,6 +12130,7 @@ body {
 @media (max-width: 768px) {
   .card .card-border, .card-bg-img-left .card-border, .card-bg-img-right .card-border {
     float: none !important;
+    margin-left: 30%;
   }
 }
 
@@ -12140,11 +12140,13 @@ body {
   font-weight: bolder;
   line-height: 1;
   margin: 20px 0;
+  text-align: center;
 }
 
 @media (min-width: 768px) {
   .card .card-header, .card-bg-img-left .card-header, .card-bg-img-right .card-header {
     font-size: 30px;
+    text-align: left;
   }
 }
 
