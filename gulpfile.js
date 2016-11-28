@@ -63,6 +63,9 @@ gulp.task('browser-sync', function() {
           ],
           bootswatch: [
             './node_modules/bootswatch/paper/**/*.scss'
+          ],
+          hamburger: [
+            './node_modules/hamburgers/_sass/hamburgers/**/*.scss'
           ]
       };
       _(assetsScss).forEach(function (assets, type) {

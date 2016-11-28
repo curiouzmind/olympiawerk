@@ -2,6 +2,10 @@
   .page-banner-img {
     bottom: 100px !important;
     overflow: visible !important;
+    padding: 0;
+    @media(max-width: $screen-sm-max) {
+      width: 100%;
+    }
   }
 }
 .sliders-bg,.video-bg {
@@ -18,11 +22,25 @@
   .carousel-inner {
     bottom: 20px;
   }
+  .item img {
+    @media(min-width: $screen-md-min) {
+      width: 100%;
+    }
+  }
+
 }
 .carousel-indicators {
   bottom: -75px;
   left: 38%;
   width: 80%;
+  transition: all 0.5s ease;
+  @media(max-width: $screen-xs-max) {
+    left: 28%;
+    width: 100%;
+  }
+  @media(min-width: $screen-sm-min) {
+    bottom: -90px;
+  }
   li {
     width: 0;
   	height: 0;
@@ -43,6 +61,8 @@
 }
 .carousel-indicators .active {
   border-bottom: 13px solid $light-orange;
+  margin: 0 10px;
+  transition: all 0.5s ease;
   @media(min-width: $screen-sm-min) {
     border-bottom: 28px solid $light-orange;
   }
@@ -59,7 +79,13 @@
     text-transform: uppercase;
     letter-spacing: 0.1px;
     margin: 5px;
+    @media(min-width: 500px) and (max-width: 767px) {
+      font-size: 12px;
+    }
     @media(min-width: $screen-sm-min) {
+      font-size: 17px;
+    }
+    @media(min-width: $screen-md-min) {
       font-size: 24.98px;
     }
   }

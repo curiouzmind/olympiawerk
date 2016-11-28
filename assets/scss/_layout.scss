@@ -1,5 +1,10 @@
 //header
-
+.content {
+  min-height: 600px;
+  @media(min-width: $screen-sm-min) {
+    min-height: 800px;
+  }
+}
 //page banner
 .page-banner {
   width: 100%;
@@ -22,13 +27,14 @@
 }
 .banner-bg {
   position: relative;;
-  bottom: 60px;
+  bottom: 50px;
   width: 345px;
   height: $img-banner-xs-height;
   transition: all 0.5s ease;
   left: -6px;
   @media(min-width: $screen-md-min) {
     left: 0;
+    bottom: 60px;
   }
   .video {
     width: 100%;
