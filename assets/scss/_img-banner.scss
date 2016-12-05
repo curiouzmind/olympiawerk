@@ -152,6 +152,10 @@
     font-size: 12px;
     span {
       word-break: keep-all;
+      a {
+        text-decoration: none;
+        color: inherit;
+      }
     }
   }
 }

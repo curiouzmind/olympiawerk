@@ -4,4 +4,8 @@ body {
     line-height: 1.846;
     color: #666;
     background-color: #fff;
+    a {
+      color: inherit;
+      text-decoration: none;
+    }
 }
