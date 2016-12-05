@@ -124,6 +124,12 @@
     }
   }
 }
+.box {
+  min-height: 427px;
+  @media (min-width: $screen-sm-min) {
+    // width: 76%;
+  }
+}
 .card-overlay {
   .card-overlay-bg {
     min-height: 276px;
@@ -131,7 +137,6 @@
     background-clip: border-box;
     background-size: auto 276px;
     text-align: center;
-    // padding: 111px 0;
   }
   .card-overlay-text {
     color: transparent;
@@ -144,24 +149,28 @@
   }
   .card-overlay-blurb {
     color: transparent;
-    text-align: justify;
-    letter-spacing: -0.5px;
+    text-align: left;
+    // letter-spacing: -0.5px;
     margin-top: 10px;
     line-height: 1.25;
+    word-break: keep-all !important;
   }
   //bg 1,2,3
   .card-overlay-bg1 {
     background: url(../img/tradition-bg.jpg) no-repeat 100% #fff;
+    background-size: cover;
     @extend .card-overlay-bg;
   }
   .card-overlay-bg2 {
     background:
     url(../img/innovation-bg.jpg) no-repeat 46% #fff;
+    background-size: cover;
     @extend .card-overlay-bg;
   }
   .card-overlay-bg3 {
     background:
     url(../img/kreativat-bg.jpg) no-repeat 40% #fff;
+    background-size: cover;
     @extend .card-overlay-bg;
   }
 }

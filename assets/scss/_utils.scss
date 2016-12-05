@@ -4,11 +4,20 @@
     height: 50px;
   }
 }
-.content-margin-30 {
+.content-margin {
   height: 30px;
+  @media(min-width: $screen-sm-min) {
+    // height: 30px;
+  }
+  @media(min-width: $screen-md-min) {
+    // height: 50px;
+  }
 }
 .content-margin-5 {
   height: 5px;
+}
+.pad0 {
+  padding: 0 !important;
 }
 .pad-right0 {
   padding-right: 0 !important;
@@ -22,6 +31,7 @@
 .pad-down0 {
   padding-bottom: 0 !important;
 }
+//
 .mar-right0 {
   margin-right: 0 !important;
 }

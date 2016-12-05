@@ -2,7 +2,7 @@
   .page-banner-img {
     bottom: 100px !important;
     overflow: visible !important;
-    padding: 0;
+    // padding: 0;
     @media(max-width: $screen-sm-max) {
       width: 100%;
     }
@@ -40,6 +40,8 @@
   }
   @media(min-width: $screen-sm-min) {
     bottom: -90px;
+    left: 31%;
+    width: 100%;
   }
   li {
     width: 0;
@@ -83,7 +85,7 @@
       font-size: 12px;
     }
     @media(min-width: $screen-sm-min) {
-      font-size: 17px;
+      font-size: 14px;
     }
     @media(min-width: $screen-md-min) {
       font-size: 24.98px;
