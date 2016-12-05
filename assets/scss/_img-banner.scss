@@ -1,0 +1,190 @@
+
+//img page-banner
+.overflow-show {
+  overflow: visible !important;
+}
+ .contact-page-banner {
+   height: $img-banner-xs-well;
+   @media(min-width: $screen-sm-min) {
+     height: 450px !important;
+   }
+   @media(min-width: $screen-md-min) and (max-width: 1199px) {
+     height: 555px !important;
+   }
+   @media(min-width: $screen-lg-min) {
+     height: 670px !important;
+   }
+   .well {
+     height: $img-banner-xs-well;
+    //  background-color: #333;
+     @media(max-width: 320px) {
+       height: $img-banner-xxs-well;
+     }
+     @media(min-width: $screen-sm-min) {
+       height: 405px !important;
+     }
+     @media(min-width: $screen-md-min) and (max-width: 1199px) {
+       height: $img-banner-md-well !important;
+     }
+     @media(min-width: $screen-lg-min) {
+       height: 620px !important;
+     }
+   }
+   img {
+     width: 100%;
+   }
+ }
+.img-banner {
+  height: $img-page-banner-xs-height;
+  overflow: hidden;
+  @media(max-width: $screen-xs-max) {
+    height: $img-page-banner-xxs-height;
+  }
+  @media(min-width: $screen-sm-min) {
+    height: $img-page-banner-sm-height;
+  }
+  @media(min-width: $screen-md-min) and (max-width: 1199px) {
+    height: $img-page-banner-md-height;
+  }
+  @media(min-width: $screen-lg-min) {
+    height: $img-page-banner-lg-height;
+  }
+  .well {
+    height: $img-banner-xs-well;
+    // background-color: #333;
+    @media(max-width: 320px) {
+      height: $img-banner-xxs-well;
+    }
+    @media(min-width: $screen-sm-min) {
+      height: $img-banner-sm-well;
+    }
+    @media(min-width: $screen-md-min) {
+      height: $img-banner-md-well;
+    }
+    @media(min-width: $screen-lg-min) {
+      height: $img-banner-lg-well;
+    }
+  }
+  .banner-bg {
+    padding-right: 0;
+    padding-left: 0;
+    position: relative;
+    @media(max-width: 320px) {
+      width: 288px;
+      height: 157px;
+    }
+    @media(min-width: $screen-sm-min) {
+      width: 600px;
+      height: $img-banner-sm-height;
+    }
+    @media(min-width: $screen-md-min) {
+      width: 800px;
+      height: $img-banner-md-height;
+    }
+    @media(min-width: $screen-lg-min) {
+      width: 1020px;
+      height: $img-banner-lg-height;
+    }
+    .text1,.text2 {
+      position: absolute;
+      z-index: 200;
+      color: #fff;
+      font-size: 10px;
+      line-height: 1.2;
+      bottom: -223px;
+      @media(min-width: $screen-sm-min) {
+        bottom: -223px;
+      }
+      @media(min-width: $screen-md-min) {
+        bottom: -179px;
+      }
+      @media(min-width: $screen-lg-min) {
+        bottom: -375px;
+      }
+    }
+    .text1 {
+      @media(min-width: $screen-sm-min) {
+        left: 10px;
+        width: 50%;
+      }
+      @media(min-width: $screen-md-min) {
+        left: 65px;
+        width: 40%;
+      }
+      @media(min-width: $screen-lg-min) {
+        left: 20px;
+        width: 50%;
+      }
+    }
+    .text2 {
+      @media(min-width: $screen-sm-min) {
+        left: 395px;
+        width: 35%;
+      }
+      @media(min-width: $screen-md-min) {
+        left: 545px;
+        width: 25%;
+      }
+      @media(min-width: $screen-lg-min) {
+        left: 625px;
+        width: 40%;
+      }
+      a {
+        color: inherit;
+      }
+    }
+    .contact-map-state1 {
+      opacity: 1;
+      position: relative;
+      z-index: -1;
+    }
+  }
+}
+.address-mobile {
+  .hr-colored {
+    margin-top: 5px;
+    margin-bottom: 5px;
+    border: 0;
+    border-top: 2px solid $light-orange;
+    width: 50%;
+  }
+  .add1, .add2 {
+    font-size: 12px;
+    span {
+      word-break: keep-all;
+    }
+  }
+}
+.fixed-action-btn {
+  .btn-floating {
+    display: none;
+    position: fixed;
+    z-index: 999;
+    background: $light-orange;
+    text-decoration: none;
+    color: $lightest;
+    bottom: 89px;
+    right: 40px;
+    border-radius: 50%;
+    padding: 10px;
+    border: solid 1px #FF9933;
+  }
+}
+.page-banner-state1 {
+  opacity: 1;
+  overflow: visible !important;
+}
+.page-banner-state2 {
+  opacity: 0.5;
+  transition: all 0.5s ease;
+  overflow: hidden !important;
+}
+.contact-map-state1 {
+  opacity: 1;
+  position: relative;
+  z-index: -1;
+}
+.contact-map-state2 {
+  opacity: 0.25;
+  transition: all 0.5s ease;
+}

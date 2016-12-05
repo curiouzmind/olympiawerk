@@ -3,13 +3,11 @@
   <head>
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <!-- <meta name="viewport" content="width=device-width, initial-scale=1"> -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
     <title>ÜBER UNS | OLYMPIAWERK</title>
-
     <!-- sitewide styles -->
-    <link href="css/olympiawerk.min.css" rel="stylesheet">
-    <link href="images/favicon.ico" rel="icon" type="image/x-icon" />
-
+    <link href="css/olympiawerk.css" rel="stylesheet">
+    <link href="img/favicon.ico" rel="icon" type="image/x-icon" />
     <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
     <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
     <!--[if lt IE 9]>
@@ -19,67 +17,61 @@
   </head>
   <body>
     <!-- header -->
-    <header class="header container">
-      <nav id="navbar-primary" class="navbar" role="navigation">
-        <div class="container-fluid">
-          <!-- Brand and toggle get grouped for better mobile display -->
+    <header class="header">
+      <div class="navbar navbar-default">
+        <div class="container">
           <div class="navbar-header">
-            <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navbar-primary-collapse">
-              <span class="sr-only">Toggle navigation</span>
+            <a href="home.html" class="navbar-brand hidden-sm hidden-md hidden-lg"><img class="img-responsive" src="img/olympiawerk-logo.png" alt="Olympiawerk Logo"></a>
+            <button class="navbar-toggle" type="button" data-toggle="collapse" data-target="#navbar-main">
               <span class="icon-bar"></span>
               <span class="icon-bar"></span>
               <span class="icon-bar"></span>
             </button>
           </div>
-          <div class="collapse navbar-collapse" id="navbar-primary-collapse">
+          <div class="navbar-collapse collapse text-uppercase text-center" id="navbar-main">
             <ul class="nav navbar-nav">
-              <li class="active"><a href="about.html">über uns<span class="sr-only">(current)</span></a></li>
-              <li><a href="services.html">Leistungen</a></li>
-              <li><a class="logo-navbar-middle" href="index.html"><img src="images/Olympiawerk_Logotype_4C_FNL.png" width="300" alt="Olympiawerk Logo"></a></li>
-              <li><a href="woodwork.html">schreinerei</a></li>
+              <li class="active"><a href="about.html">über uns<span class="sr-only">(current)</span></a><li>
+              <li><a href="services.html">Leistungen</a><li>
+              <li><a href="home.html" class="navbar-brand hidden-xs"><img class="img-responsive" src="img/olympiawerk-logo.png" alt="Olympiawerk Logo"></a></li>
+              <li><a href="woodworking.html">schreinerei</a></li>
               <li><a href="contact.html">kontakt</a></li>
             </ul>
-          </div><!-- /.navbar-collapse -->
-        </div><!-- /.container-fluid -->
-      </nav>
+          </div>
+        </div>
+      </div>
     </header>
     <!-- /header -->
     <main class="content">
-      <div class="main-content">
-        <!--  page banner-->
-        <div class="row mar-right0 mar-left0">
-          <div class="col-md-12 col-xs-12 col-sm-12 banner-fix-top"></div>
-        </div>
-        <div class="row  mar-right0 mar-left0 page-banner">
-          <div class="col-md-12 col-xs-12 col-sm-12 well page-banner-well">
-            <div class="container page-banner-img">
-              <img class="img-responsive center-block" src="images\about-page-banner-web.jpg" alt="Founders Image" />
-            </div>
+      <div class="page-banner img-banner">
+        <div class="pad-top"></div>
+        <div class="well">
+          <div class="banner-bg container">
+            <img class="img-responsive center-block" src="img\about-page-banner-web.jpg" alt="Founders Image" />
           </div>
         </div>
-        <div class="row  mar-right0 mar-left0">
-          <div class="col-md-12 col-xs-12 col-sm-12 banner-fix-bottom"></div>
-        </div>
-        <div class="content-margin-50"></div>
+        <div class="pad-bttm"></div>
+      </div>
+      <div class="content-margin-50"></div>
+      <div class="container articles">
         <!--  articles-->
-        <div class="row mar-right0 mar-left0 card">
-          <div class="col-md-12 col-xs-12 col-sm-12">
-            <div class="container pad-right0 pad-left0">
+        <div class="row card">
+          <div class="col-md-12 col-xs-12 col-sm-12 pad-right0 pad-left0">
+            <div class="articles container pad-right0 pad-left0">
               <!-- article 1 -->
               <hr class="card-border pull-right">
               <div class="row mar-right0 mar-left0">
-                <div class="col-md-12 col-xs-12 col-sm-12 card-bg-img-left">
+                <div class="col-md-12 col-xs-12 col-sm-12 card-bg-img-left pad-right0 pad-left0">
                   <article class="article">
                     <div class="row card-header">
-                      <div class="col-md-offset-4 col-md-8 col-sm-offset-4 col-sm-8 col-xs-offset-4 col-xs-8">
+                      <div class="col-lg-offset-3 col-lg-7 col-md-offset-4 col-md-7 col-xs-12 col-sm-12 pad-right0 pad-left0">
                         <span class="card-header-1">FÜR JEDES PROBLEM</span>
                       </div>
-                      <div class="col-md-offset-5 col-md-7 col-sm-offset-5 col-sm-7 col-xs-offset-5 col-xs-7">
+                      <div class="col-lg-offset-4 col-lg-6 col-md-offset-5 col-md-7 col-xs-12 col-sm-12 pad-right0 pad-left0">
                         <span class="card-header-2">EINE SICHERE LÖSUNG</span>
                       </div>
                     </div>
                     <div class="row card-text">
-                      <div class="col-md-offset-8 col-md-4 col-sm-offset-8 col-sm-4 col-xs-offset-8 col-xs-4 pad-left0 pad-right0">
+                      <div class="col-lg-offset-8 col-lg-4 col-md-offset-7 col-md-5 col-xs-12 col-sm-12 pad-right0 pad-left0">
                         <p class="card-text-1 mar-down0">
                           „Seit 1995 bin ich im Olympiadorf tätig. Der Beginn war eine Empfehlung des Amtes für Denkmalschutz. Zu Beginn des Jahres 2016 habe ich mich gemeinsam mit meiner Frau dazu entschlossen, einen Service-Laden – das Olympiawerk – zu eröffnen. Viele Ideen der Olympiadorf-Bewohner flossen mit ein. Wir arbeiten nach dem Motto: <br><strong>Wer gut bleiben will, muss besser werden.</strong>
                         </p>
@@ -95,22 +87,22 @@
               <div class="content-margin-50"></div>
               <!-- article 2 -->
               <hr class="card-border pull-left">
-              <div class="row mar-right0 mar-left0">
-                <div class="col-md-12 col-xs-4 col-sm-12 card-bg-img-right pad-left0">
+              <div class="row">
+                <div class="col-md-12 col-xs-12 col-sm-12 card-bg-img-right">
                   <article class="article">
                     <div class="row card-header">
-                      <div class="col-md-offset-0 col-md-12 col-sm-offset-0 col-sm-12 col-xs-offset-0 col-xs-12 pad-left0">
+                      <div class="col-md-offset-0 col-md-12 col-sm-12 col-xs-12 pad-right0 pad-left0">
                         <span class="card-header-1">IHR SERVICE- UND</span>
                       </div>
-                      <div class="col-md-offset-1 col-md-11 col-sm-offset-1 col-sm-11 col-xs-offset-1 col-xs-11  pad-left0">
+                      <div class="col-md-offset-1 col-md-11 pad-right0 pad-left0">
                         <span class="card-header-2">HANDWERKERLADEN</span>
                       </div>
-                      <div class="col-md-offset-3 col-md-9 col-sm-offset-3 col-sm-9 col-xs-offset-3 col-xs-9">
+                      <div class="col-md-offset-3 col-md-9 col-sm-12  col-xs-12 pad-right0 pad-left0">
                         <span class="card-header-3">IM OLYMPIADORF</span>
                       </div>
                     </div>
                     <div class="row card-text">
-                      <div class="col-md-offset-0 col-md-5 col-sm-offset-0 col-sm-5 col-xs-offset-0 col-xs-5 pad-left0 pad-right0">
+                      <div class="col-md-offset-0 col-md-5 col-xs-12 col-sm-12 pad-right0 pad-left0">
                         <p class="card-text-1 mar-down0">
                           „Mit viel Freude, Engagement und Spaß stehe ich meinem Mann tatkräftig zur Seite. Ich setzte unser Wissen, sowie meine Erfahrung im Olympiawerk um und kümmere mich um diverse Anliegen unserer Olympiadorf-Bewohner.
                         </p>
@@ -126,29 +118,19 @@
             </div>
           </div>
         </div>
-        <div class="content-margin-50"></div>
       </div>
+      <div class="content-margin-50"></div>
     </main>
     <!-- footer -->
-    <footer class="footer">
-      <div class="container">
-        <div class="row">
-          <div class="col-md-12 col-xs-12 col-sm-12 text-uppercase foot">
-            <a href="contact.html">
-              <span class="foot-left pull-left">Impressum</span>
-              <span class="foot-right pull-right">&copy; 2016 m. Treffer</span>
-            </a>
-          </div>
-        </div>
+    <footer class="footer text-uppercase">
+      <div class="container articles">
+        <span class="pull-right">&copy; 2016 m. Treffer</span>
+        <a href="contact.html">Impressum</a>
       </div>
     </footer>
     <!-- /footer -->
-    <!--  SCRIPTS-->
-    <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
-    <script src="scripts/jquery.min.js"></script>
-    <!-- Include all compiled plugins (below), or include individual files as needed -->
-    <script src="scripts/bootstrap.min.js"></script>
-    <script src="scripts/olympiawerk.js"></script>
+    <!-- scripts -->
+    <script src="js/olympiawerk.js"></script>
     <!-- /scripts -->
   </body>
 </html>
