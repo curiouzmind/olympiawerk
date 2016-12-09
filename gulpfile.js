@@ -42,7 +42,7 @@ gulp.task('browser-sync', function() {
         server: {
           baseDir: ["./"],
           // baseDir: ["dist"],
-          index: "home.html"
+          index: "index.html"
         },
         port: 8000
     });
