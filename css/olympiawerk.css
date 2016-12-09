@@ -13121,7 +13121,7 @@ body a {
 
 @media (min-width: 1200px) {
   .contact-page-banner {
-    height: 670px !important;
+    height: 659px !important;
   }
 }
 
@@ -13423,8 +13423,8 @@ body a {
 
 .vid-bg {
   background: #f93;
-  padding-right: 10px;
-  padding-left: 10px;
+  padding-right: 20px;
+  padding-left: 20px;
 }
 
 .banner-bg {
@@ -13453,7 +13453,7 @@ body a {
 
 @media (min-width: 992px) {
   .banner-bg .video {
-    bottom: 10px;
+    bottom: 20px;
   }
 }
 
